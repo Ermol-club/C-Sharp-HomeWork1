@@ -11,6 +11,7 @@ for (int i = 0; i < arr.Length; i++)
 
 int maxNumber = 0;
 int minNumber = 999;
+
 for (int i = 0; i < arr.Length; i++)
 {
     if (arr[i] > maxNumber)
@@ -23,7 +24,10 @@ for (int i = 0; i < arr.Length; i++)
         minNumber = arr[i];
     }
 }
+int diff = maxNumber - minNumber;
+
 System.Console.WriteLine("\n" + "Максимальный элемент: " + maxNumber + "\n" + "Минимальный элемент: " + minNumber);
+System.Console.WriteLine("Разница между min и max = " + diff);
 
 
 
