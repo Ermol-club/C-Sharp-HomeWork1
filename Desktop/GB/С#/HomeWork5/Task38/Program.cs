@@ -1,16 +1,16 @@
 ﻿// Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
-int[] arr = new int[8];
+double[] arr = new double[8];
 Random rnd = new Random();
 
 for (int i = 0; i < arr.Length; i++)
 {
-    arr[i] = rnd.Next(1000);
-    System.Console.Write(arr[i] + " ");
+    arr[i] = rnd.NextDouble()*20;
+    System.Console.WriteLine(arr[i] + " ");
 }
 
-int maxNumber = 0;
-int minNumber = 999;
+double maxNumber = 0;
+double minNumber = 999;
 
 for (int i = 0; i < arr.Length; i++)
 {
@@ -24,7 +24,7 @@ for (int i = 0; i < arr.Length; i++)
         minNumber = arr[i];
     }
 }
-int diff = maxNumber - minNumber;
+double diff = maxNumber - minNumber;
 
 System.Console.WriteLine("\n" + "Максимальный элемент: " + maxNumber + "\n" + "Минимальный элемент: " + minNumber);
 System.Console.WriteLine("Разница между min и max = " + diff);
