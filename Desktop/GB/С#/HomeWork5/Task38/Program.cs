@@ -5,7 +5,7 @@ Random rnd = new Random();
 
 for (int i = 0; i < arr.Length; i++)
 {
-    arr[i] = rnd.NextDouble()*20;
+    arr[i] = rnd.NextDouble();
     System.Console.WriteLine(arr[i] + " ");
 }
 
