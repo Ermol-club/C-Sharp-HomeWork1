@@ -1,6 +1,6 @@
 ﻿//41. Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
 
-Console.WriteLine("Enter your nubbers with  ---> ");
+Console.WriteLine("Enter your nubbers  ---> ");
 string str = Console.ReadLine();
 
 char[] separ = new char[] {' ', '/'};
