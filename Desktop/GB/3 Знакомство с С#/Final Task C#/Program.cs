@@ -3,10 +3,10 @@
 string [] arrayFirst =  {"Hello", "2", "World", ":)"};
 Console.WriteLine($"[{string.Join(", ", arrayFirst)}]");
 
-string [] arraySecond = FindStringBelow4(arrayFirst);
+string [] arraySecond = StringBelow4(arrayFirst);
 Console.WriteLine($"[{string.Join(", ", arraySecond)}]");
 
-string [] FindStringBelow4(string[] arrayStart)
+string [] StringBelow4(string[] arrayStart)
 {
 int n=0,j=0;
 foreach (string item in arrayStart)
